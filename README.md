@@ -1,90 +1,222 @@
-# python-fundamentals # Python Basics Practice
+# 🐍 Python Fundamentals Practice
 
-This repository contains beginner-level Python programs covering fundamental concepts.
+This repository contains beginner-level Python programs with **definitions and solved examples** for each topic and subtopic.
 
-## Topics Covered
+---
 
-### 1. Type Conversion
-Examples of converting data types in Python:
-- Boolean to String using `str()`
-- String to Integer using `int()`
-- Integer to Float using `float()`
+## 📚 Topics Covered
 
-### 2. String Operations
-Basic string manipulation techniques:
-- Indexing and Negative Indexing
-- Slicing (`start:stop:step`)
-- Finding string length using `len()`
-- Concatenation using `+`
-- Escape sequences (`\n`, `\t`)
-- Case conversion (`upper()`, `lower()`)
-- Replacing text using `replace()`
+---
 
+## 🔹 1. Type Conversion
 
-## 🔹 What is a List in Python?
+**Definition:**  
+Type conversion means converting one data type into another.
 
-A **list** is a collection used to store multiple items in a single variable.
+### Subtopics:
 
-👉 It is **ordered and mutable**, which means:
-- You can access elements using index
-- You can modify, add, or remove elements
+- **Boolean to String**
+  - Definition: Converts boolean value into string  
+  - Example:
+    result = str(True)   # "True"
 
+- **String to Integer**
+  - Definition: Converts string number into integer  
+  - Example:
+    result = int("10")   # 10
 
-  ## 🔹 What is a Tuple in Python?
+- **Integer to Float**
+  - Definition: Converts integer into decimal number  
+  - Example:
+    result = float(5)    # 5.0
 
-A **tuple** is a collection of multiple items stored in a single variable.
+---
 
-- Tuples are **ordered** (items have a fixed position)
-- Tuples are **immutable** (cannot be changed after creation)
-- They can store different data types
+## 🔹 2. String Operations
 
-### Example:
-```python
-numbers = (10, 20, 30)
+**Definition:**  
+String operations are used to manipulate text data.
 
-### Example:
-```python
-numbers = [10, 20, 30, 40]
-numbers[0] = 100  # List can be modified
+### Subtopics:
 
-# 📘 Python Lists & Tuples Notes
+- **Indexing**
+  - Definition: Access characters using position  
+  - Example:
+    text = "Python"
+    print(text[0])   # P
 
-## 🔹 Topics Covered
+- **Negative Indexing**
+  - Definition: Access characters from end  
+  - Example:
+    print(text[-1])  # n
 
-### 1. Nested List Access
-A list inside another list.  
-We use multiple indexing to access elements.
+- **Slicing**
+  - Definition: Extract part of string  
+  - Example:
+    print(text[0:3])  # Pyt
 
-### 2. Nested Tuple Access
-Tuples can also contain tuples.  
-Access works same as lists.
+- **Length**
+  - Definition: Count total characters  
+  - Example:
+    print(len(text))  # 6
 
-### 3. Negative Indexing
-Negative index starts from the end.  
-Example: `-1` means last element.
+- **Concatenation**
+  - Definition: Join two strings  
+  - Example:
+    print("Hello " + "World")  # Hello World
 
-### 4. List Slicing with Step
-Syntax: `list[start:end:step]`  
-Used to extract elements with skipping.
+- **Escape Sequences**
+  - Definition: Special characters like new line or tab  
+  - Example:
+    print("Hello\nWorld")
 
-### 5. Adding Elements (append)
-`append()` adds an element at the end of list.
+- **Case Conversion**
+  - Definition: Change text case  
+  - Example:
+    print(text.upper())  # PYTHON
 
-### 6. Removing Elements (remove)
-`remove()` deletes a specific value from list.
+- **Replace**
+  - Definition: Replace characters in string  
+  - Example:
+    print(text.replace("P", "J"))  # Jython
 
-### 7. List vs Tuple
-- List → mutable (can change)
-- Tuple → immutable (fixed)
+---
 
+## 🔹 3. List in Python
 
-## Files Included
-- `type_conversion.py` → Demonstrates type conversion examples  
-- `string_operations.py` → Contains string manipulation programs
-- `tuples_and_list.py` → Contains list and tuple concepts with examples 
+**Definition:**  
+A list is a collection of items that is **ordered and mutable**.
 
-## Purpose
+### Subtopics:
+
+- **Creating List**
+  - Example:
+    numbers = [10, 20, 30]
+
+- **Adding Elements**
+  - Definition: Add new item using `append()`  
+  - Example:
+    numbers.append(40)
+
+- **Removing Elements**
+  - Definition: Remove item using `remove()`  
+  - Example:
+    numbers.remove(20)
+
+---
+
+## 🔹 4. Tuple in Python
+
+**Definition:**  
+A tuple is a collection of items that is **ordered but immutable**.
+
+### Subtopics:
+
+- **Creating Tuple**
+  - Example:
+    numbers = (10, 20, 30)
+
+- **Accessing Elements**
+  - Example:
+    print(numbers[0])  # 10
+
+---
+
+## 🔹 5. List & Tuple Concepts
+
+**Definition:**  
+Used to access and manipulate structured data.
+
+### Subtopics:
+
+- **Nested List**
+  - Definition: List inside list  
+  - Example:
+    nested = [[1, 2], [3, 4]]
+    print(nested[1][1])  # 4
+
+- **Nested Tuple**
+  - Example:
+    nested = ((1, 2), (3, 4))
+    print(nested[1][1])  # 4
+
+- **Negative Indexing**
+  - Example:
+    nums = [10, 20, 30]
+    print(nums[-1])  # 30
+
+- **Slicing**
+  - Example:
+    print(nums[0:2])  # [10, 20]
+
+---
+
+## 🔹 6. Set in Python
+
+**Definition:**  
+A set is a collection of **unique and unordered elements**.
+
+### Subtopics:
+
+- **Creating Set**
+  - Example:
+    my_set = {1, 2, 2, 3}
+    print(my_set)  # {1, 2, 3}
+
+- **Adding Elements**
+  - Example:
+    my_set.add(4)
+
+- **Removing Elements**
+  - Example:
+    my_set.remove(2)
+
+---
+
+## 🔹 7. Set Operations
+
+**Definition:**  
+Used to perform mathematical operations on sets.
+
+### Subtopics:
+
+- **Union**
+  - Definition: Combine both sets  
+  - Example:
+    print(A | B)
+
+- **Intersection**
+  - Definition: Common elements  
+  - Example:
+    print(A & B)
+
+- **Difference**
+  - Definition: Elements in A but not in B  
+  - Example:
+    print(A - B)
+
+- **Symmetric Difference**
+  - Definition: Non-common elements  
+  - Example:
+    print(A ^ B)
+
+---
+
+## 📂 Files Included
+
+- `type_conversion.py` → Type conversion examples  
+- `string_operations.py` → String operations  
+- `tuples_and_list.py` → List & Tuple concepts  
+- `sets.py` → Set concepts  
+
+---
+
+## 🎯 Purpose
+
 This repository is created to practice and strengthen Python fundamentals.
 
-## Author
-Navneet Pal
+---
+
+## 👤 Author
+
+**Navneet Pal**
