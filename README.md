@@ -201,6 +201,74 @@ Used to perform mathematical operations on sets.
     print(A ^ B)
 
 ---
+## 🔹 8. Dictionary in Python
+
+**Definition:**  
+A dictionary is a collection of key-value pairs used to store data in a structured way.
+
+- Keys are unique  
+- Values can be of any data type  
+- Dictionaries are mutable (can be changed)  
+
+---
+
+### 🔹 Subtopics
+
+- **Creating Dictionary**
+  - Definition: A dictionary is created using curly braces `{}` with key-value pairs  
+  - Example:
+    student = {"name": "Navneet", "age": 20}
+
+---
+
+- **Accessing Values**
+  - Definition: Values are accessed using their keys  
+  - Example:
+    print(student["name"])  # Navneet
+
+---
+
+- **Adding / Updating Values**
+  - Definition: You can add a new key-value pair or update an existing value  
+  - Example:
+    student["age"] = 21   # Update  
+    student["course"] = "Python"  # Add  
+
+---
+
+- **Removing Elements**
+  - Definition: Elements can be removed using methods like `pop()`  
+  - Example:
+    student.pop("age")
+
+---
+
+- **Dictionary Methods**
+
+  - **keys()**
+    - Definition: Returns all keys present in the dictionary  
+    - Example:
+      print(student.keys())
+
+  - **values()**
+    - Definition: Returns all values present in the dictionary  
+    - Example:
+      print(student.values())
+
+  - **items()**
+    - Definition: Returns all key-value pairs as tuples  
+    - Example:
+      print(student.items())
+
+---
+
+## 💡 Key Points
+
+- Dictionary stores data in **key-value format**  
+- Keys must be **unique**  
+- Easy and fast access using keys  
+- Mutable (can modify data anytime)  
+
 
 ## 📂 Files Included
 
@@ -208,7 +276,7 @@ Used to perform mathematical operations on sets.
 - `string_operations.py` → String operations  
 - `tuples_and_list.py` → List & Tuple concepts  
 - `sets.py` → Set concepts  
-
+- `dictionaries.py` → Contains dictionary concepts with examples
 ---
 
 ## 🎯 Purpose
