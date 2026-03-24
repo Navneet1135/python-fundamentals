@@ -491,6 +491,184 @@ Dictionaries are useful when:
 ---
 
 
+# 📚 Condition & Branching in Python
+
+This notebook demonstrates fundamental concepts of **conditional statements and branching** in Python. These concepts allow programs to make decisions based on different conditions.
+
+---
+
+# 🔹 1. Introduction to Conditional Statements
+
+## 📌 What is Condition & Branching?
+
+Conditionals allow your program to execute different blocks of code depending on whether a condition is **True or False**.
+
+### Example:
+
+```python
+age = 18
+if age >= 18:
+    print("You are eligible to vote")
+```
+
+---
+
+# 🔹 2. Types of Conditional Statements
+
+## 📌 1. if Statement
+
+Executes a block of code if the condition is True.
+
+```python
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
+
+---
+
+## 📌 2. if-else Statement
+
+Executes one block if condition is True, otherwise another block.
+
+```python
+x = 3
+if x > 5:
+    print("Greater")
+else:
+    print("Smaller")
+```
+
+---
+
+## 📌 3. if-elif-else Statement
+
+Used when multiple conditions need to be checked.
+
+```python
+marks = 75
+if marks >= 90:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+else:
+    print("Grade C")
+```
+
+---
+
+# 🔹 3. Nested Conditions
+
+## 📌 What is Nested if?
+
+An **if statement inside another if statement**.
+
+```python
+age = 20
+if age >= 18:
+    if age >= 21:
+        print("Eligible for everything")
+    else:
+        print("Only partially eligible")
+```
+
+---
+
+# 🔹 4. Logical Operators in Conditions
+
+## 📌 Operators Used
+
+* `and` → Both conditions must be True
+* `or` → At least one condition must be True
+* `not` → Reverses the condition
+
+### Example:
+
+```python
+age = 25
+income = 50000
+
+if age > 18 and income > 30000:
+    print("Eligible for loan")
+```
+
+---
+
+# 🔹 5. Comparison Operators
+
+## 📌 Common Operators
+
+* `==` Equal to
+* `!=` Not equal to
+* `>` Greater than
+* `<` Less than
+* `>=` Greater than or equal to
+* `<=` Less than or equal to
+
+### Example:
+
+```python
+x = 10
+if x != 5:
+    print("x is not equal to 5")
+```
+
+---
+
+# 🔹 6. Short-hand (Ternary) Condition
+
+## 📌 What is Ternary Operator?
+
+A one-line conditional statement.
+
+```python
+x = 10
+result = "Positive" if x > 0 else "Negative"
+```
+
+---
+
+# 🔹 7. Practical Examples
+
+## 📌 Example 1: Even or Odd
+
+```python
+num = 4
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+```
+
+## 📌 Example 2: Maximum of Two Numbers
+
+```python
+a = 5
+b = 10
+
+if a > b:
+    print("a is greater")
+else:
+    print("b is greater")
+```
+
+---
+
+# 📊 Summary
+
+| Concept              | Description                     |
+| -------------------- | ------------------------------- |
+| if                   | Executes when condition is True |
+| if-else              | Two possible outcomes           |
+| if-elif-else         | Multiple conditions             |
+| Nested if            | Condition inside condition      |
+| Logical Operators    | Combine conditions              |
+| Comparison Operators | Compare values                  |
+| Ternary Operator     | One-line condition              |
+
+---
+
+
 ## 📂 Files Included
 
 - `type_conversion.py` → Type conversion examples  
@@ -504,6 +682,7 @@ Dictionaries are useful when:
   - Sets (union, intersection, difference, uniqueness)
   - Dictionaries (key-value pairs, update, access methods)
   Each topic is explained with examples.
+- `condition_branching.ipynb` → Demonstrates Python condition and branching concepts including if-else statements, nested conditions, logical operators, and real-world examples
 ---
 
 ## 🎯 Purpose
