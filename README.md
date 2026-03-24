@@ -270,6 +270,227 @@ A dictionary is a collection of key-value pairs used to store data in a structur
 - Mutable (can modify data anytime)  
 
 
+
+# 📚 Data Structures Basics (Python)
+
+This repository demonstrates fundamental Python data structures including **Lists, Sets, and Dictionaries**. Each section includes explanations, operations, and example-based understanding.
+
+---
+
+# 🔹 1. Lists
+
+## 📌 What is a List?
+
+A **list** is an ordered, mutable collection that can store multiple items of different data types.
+
+### Example:
+
+```python
+fruits = ["Apple", "Banana", "Orange", "Grapes"]
+age = [20, 54, 57]
+mixed = [1, "Hello", True, 3.14]
+```
+
+---
+
+## 📌 Topics Covered
+
+### 1. Creation of Lists
+
+Lists are created using square brackets `[]`.
+
+### 2. Indexing
+
+Access elements using position (index starts from 0).
+
+```python
+mixed[1]  # Output: Hello
+fruits[2] # Output: Orange
+```
+
+### 3. Slicing
+
+Extract a portion of the list.
+
+```python
+fruits[1:4]  # ['Banana', 'Orange', 'Grapes']
+```
+
+### 4. Modifying Lists
+
+#### ➤ Append (Add at end)
+
+```python
+fruits.append("Mango")
+```
+
+#### ➤ Insert (Add at specific index)
+
+```python
+fruits.insert(1, "Mango")
+```
+
+---
+
+## 🧠 Example Use Case
+
+Lists are useful when:
+
+* Order matters
+* You need duplicates
+* You want to modify data frequently
+
+---
+
+# 🔹 2. Sets
+
+## 📌 What is a Set?
+
+A **set** is an unordered collection of **unique elements**.
+
+### Example:
+
+```python
+set_1 = {1,2,3,4,5}
+set_2 = {3,4,5,6,7}
+```
+
+---
+
+## 📌 Topics Covered
+
+### 1. Unique Elements
+
+Sets automatically remove duplicates.
+
+### 2. Set Operations
+
+#### ➤ Union (All elements)
+
+```python
+union_set = set_1 | set_2
+```
+
+#### ➤ Intersection (Common elements)
+
+```python
+common_set = set_1 & set_2
+```
+
+#### ➤ Difference (Elements in set_1 not in set_2)
+
+```python
+difference = set_1 - set_2
+```
+
+### 3. Modifying Sets
+
+#### ➤ Add Element
+
+```python
+union_set.add(8)
+```
+
+#### ➤ Remove Element
+
+```python
+union_set.remove(1)
+```
+
+### 4. Set Comprehension
+
+```python
+sqr_union_set = {x * 2 for x in union_set}
+```
+
+---
+
+## 🧠 Example Use Case
+
+Sets are useful when:
+
+* You need **unique values only**
+* Performing mathematical set operations
+* Removing duplicates from data
+
+---
+
+# 🔹 3. Dictionaries
+
+## 📌 What is a Dictionary?
+
+A **dictionary** stores data in **key-value pairs**.
+
+### Example:
+
+```python
+person = {"name": "Alice", "age": 30, "city": "New York"}
+```
+
+---
+
+## 📌 Topics Covered
+
+### 1. Accessing Keys, Values, Items
+
+```python
+person.keys()   # All keys
+person.values() # All values
+person.items()  # Key-value pairs
+```
+
+### 2. Storing Multiple Values
+
+```python
+person = {
+  "name": ["Alice", "John"],
+  "age": [30, 25],
+  "city": ["New York", "Dhaka"]
+}
+```
+
+### 3. Accessing Specific Data
+
+```python
+person["city"]
+person["age"]
+```
+
+### 4. Updating Values
+
+```python
+person["age"] = [31, 27]
+```
+
+### 5. Adding New Key
+
+```python
+person['email'] = ["alice@example.com", "john@example.com"]
+```
+
+---
+
+## 🧠 Example Use Case
+
+Dictionaries are useful when:
+
+* Data has a **clear relationship (key → value)**
+* Fast lookup is required
+* Structured data storage
+
+---
+
+# 📊 Summary
+
+| Data Structure | Ordered | Mutable | Unique Elements | Key Feature         |
+| -------------- | ------- | ------- | --------------- | ------------------- |
+| List           | Yes     | Yes     | No              | Index-based access  |
+| Set            | No      | Yes     | Yes             | Fast set operations |
+| Dictionary     | Yes     | Yes     | Keys unique     | Key-value mapping   |
+
+---
+
+
 ## 📂 Files Included
 
 - `type_conversion.py` → Type conversion examples  
@@ -277,6 +498,12 @@ A dictionary is a collection of key-value pairs used to store data in a structur
 - `tuples_and_list.py` → List & Tuple concepts  
 - `sets.py` → Set concepts  
 - `dictionaries.py` → Contains dictionary concepts with examples
+- - `data_structures.ipynb` → 
+  Includes fundamental Python data structures:
+  - Lists (indexing, slicing, append, insert)
+  - Sets (union, intersection, difference, uniqueness)
+  - Dictionaries (key-value pairs, update, access methods)
+  Each topic is explained with examples.
 ---
 
 ## 🎯 Purpose
