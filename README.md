@@ -668,6 +668,170 @@ else:
 
 ---
 
+# 📚 Loops in Python
+
+This notebook covers the fundamental concept of **loops in Python**, which are used to execute a block of code repeatedly based on a condition.
+
+---
+
+# 🔹 1. Introduction to Loops
+
+## 📌 What is a Loop?
+
+A **loop** allows you to run the same block of code multiple times without writing it repeatedly.
+
+### Example:
+
+```python
+for i in range(5):
+    print(i)
+```
+
+---
+
+# 🔹 2. Types of Loops
+
+## 📌 1. for Loop
+
+Used to iterate over a sequence (list, string, range, etc.)
+
+```python
+for i in range(1, 6):
+    print(i)
+```
+
+### 🧠 Use Case
+
+* When number of iterations is known
+* Iterating through collections
+
+---
+
+## 📌 2. while Loop
+
+Executes as long as a condition is True.
+
+```python
+x = 1
+while x <= 5:
+    print(x)
+    x += 1
+```
+
+### 🧠 Use Case
+
+* When number of iterations is unknown
+* Condition-based repetition
+
+---
+
+# 🔹 3. Loop Control Statements
+
+## 📌 1. break
+
+Stops the loop immediately.
+
+```python
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+
+---
+
+## 📌 2. continue
+
+Skips the current iteration and moves to the next.
+
+```python
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+```
+
+---
+
+## 📌 3. pass
+
+Does nothing (placeholder for future code).
+
+```python
+for i in range(3):
+    pass
+```
+
+---
+
+# 🔹 4. Nested Loops
+
+## 📌 What is Nested Loop?
+
+A loop inside another loop.
+
+```python
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, j)
+```
+
+### 🧠 Use Case
+
+* Working with matrices
+* Pattern printing
+
+---
+
+# 🔹 5. Loop with else
+
+## 📌 What is loop else?
+
+The `else` block executes when the loop completes normally (not terminated by break).
+
+```python
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished")
+```
+
+---
+
+# 🔹 6. Practical Examples
+
+## 📌 Example 1: Sum of Numbers
+
+```python
+total = 0
+for i in range(1, 6):
+    total += i
+print(total)
+```
+
+## 📌 Example 2: Multiplication Table
+
+```python
+num = 5
+for i in range(1, 11):
+    print(num * i)
+```
+
+---
+
+# 📊 Summary
+
+| Concept     | Description             |
+| ----------- | ----------------------- |
+| for loop    | Iterates over sequence  |
+| while loop  | Runs based on condition |
+| break       | Stops loop              |
+| continue    | Skips iteration         |
+| pass        | Placeholder             |
+| Nested loop | Loop inside loop        |
+| loop else   | Runs after loop ends    |
+
+---
 
 ## 📂 Files Included
 
@@ -683,6 +847,7 @@ else:
   - Dictionaries (key-value pairs, update, access methods)
   Each topic is explained with examples.
 - `condition_branching.ipynb` → Demonstrates Python condition and branching concepts including if-else statements, nested conditions, logical operators, and real-world examples
+- - `loops.ipynb` → Demonstrates loop concepts in Python including for, while, nested loops, and loop control statements with practical examples
 ---
 
 ## 🎯 Purpose
