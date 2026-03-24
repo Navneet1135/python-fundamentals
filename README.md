@@ -832,6 +832,201 @@ for i in range(1, 11):
 | loop else   | Runs after loop ends    |
 
 ---
+# 📚 Functions in Python
+
+This notebook covers the concept of **functions in Python**, which help organize code into reusable and modular blocks.
+
+---
+
+# 🔹 1. Introduction to Functions
+
+## 📌 What is a Function?
+
+A **function** is a block of code that performs a specific task and can be reused whenever needed.
+
+### Example:
+
+```python
+def greet():
+    print("Hello, World!")
+
+greet()
+```
+
+---
+
+# 🔹 2. Function with Parameters
+
+## 📌 What are Parameters?
+
+Parameters allow you to pass data into a function.
+
+```python
+def greet(name):
+    print("Hello", name)
+
+greet("Alice")
+```
+
+---
+
+# 🔹 3. Function with Return Value
+
+## 📌 What is Return?
+
+The `return` statement sends a result back to the caller.
+
+```python
+def add(a, b):
+    return a + b
+
+result = add(2, 3)
+print(result)
+```
+
+---
+
+# 🔹 4. Default Parameters
+
+## 📌 What are Default Arguments?
+
+You can assign default values to parameters.
+
+```python
+def greet(name="Guest"):
+    print("Hello", name)
+
+greet()
+greet("John")
+```
+
+---
+
+# 🔹 5. Keyword Arguments
+
+## 📌 What are Keyword Arguments?
+
+You can pass arguments using parameter names.
+
+```python
+def info(name, age):
+    print(name, age)
+
+info(age=25, name="Alice")
+```
+
+---
+
+# 🔹 6. Variable-Length Arguments
+
+## 📌 *args and **kwargs
+
+Used when number of arguments is unknown.
+
+```python
+def add_all(*numbers):
+    return sum(numbers)
+
+print(add_all(1, 2, 3, 4))
+```
+
+```python
+def print_info(**data):
+    print(data)
+
+print_info(name="Alice", age=25)
+```
+
+---
+
+# 🔹 7. Lambda Functions
+
+## 📌 What is Lambda?
+
+A **lambda function** is a small anonymous function.
+
+```python
+square = lambda x: x * x
+print(square(5))
+```
+
+---
+
+# 🔹 8. Recursion
+
+## 📌 What is Recursion?
+
+A function calling itself.
+
+```python
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+
+print(factorial(5))
+```
+
+---
+
+# 🔹 9. Scope of Variables
+
+## 📌 Local vs Global Scope
+
+* Local → inside function
+* Global → outside function
+
+```python
+x = 10
+
+def show():
+    x = 5
+    print(x)
+
+show()
+print(x)
+```
+
+---
+
+# 🔹 10. Practical Examples
+
+## 📌 Example 1: Even or Odd
+
+```python
+def is_even(num):
+    return num % 2 == 0
+
+print(is_even(4))
+```
+
+## 📌 Example 2: Maximum Number
+
+```python
+def max_num(a, b):
+    return a if a > b else b
+
+print(max_num(5, 10))
+```
+
+---
+
+# 📊 Summary
+
+| Concept        | Description            |
+| -------------- | ---------------------- |
+| Function       | Reusable block of code |
+| Parameters     | Input to function      |
+| Return         | Output from function   |
+| Default Args   | Predefined values      |
+| Keyword Args   | Named arguments        |
+| *args/**kwargs | Multiple inputs        |
+| Lambda         | Anonymous function     |
+| Recursion      | Self-calling function  |
+| Scope          | Variable visibility    |
+
+---
+
 
 ## 📂 Files Included
 
@@ -848,6 +1043,7 @@ for i in range(1, 11):
   Each topic is explained with examples.
 - `condition_branching.ipynb` → Demonstrates Python condition and branching concepts including if-else statements, nested conditions, logical operators, and real-world examples
 - - `loops.ipynb` → Demonstrates loop concepts in Python including for, while, nested loops, and loop control statements with practical examples
+- - `functions.ipynb` → Demonstrates Python function concepts including parameters, return statements, lambda functions, recursion, and variable scope with practical examples
 ---
 
 ## 🎯 Purpose
