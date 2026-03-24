@@ -1026,7 +1026,192 @@ print(max_num(5, 10))
 | Scope          | Variable visibility    |
 
 ---
+# 📚 Classes and Objects in Python
 
+This notebook covers the core concept of **Object-Oriented Programming (OOP)** in Python using classes and objects. These concepts help in organizing code into reusable and structured components.
+
+---
+
+# 🔹 1. Introduction to Classes and Objects
+
+## 📌 What is a Class?
+
+A **class** is a blueprint for creating objects. It defines properties (variables) and behaviors (methods).
+
+## 📌 What is an Object?
+
+An **object** is an instance of a class.
+
+### Example:
+
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+p1 = Person("Alice")
+print(p1.name)
+```
+
+---
+
+# 🔹 2. The **init** Method (Constructor)
+
+## 📌 What is **init**?
+
+The `__init__` method is a special function that is automatically called when an object is created.
+
+```python
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+c1 = Car("Toyota", "Camry")
+```
+
+---
+
+# 🔹 3. Instance Variables
+
+## 📌 What are Instance Variables?
+
+Variables that belong to the object.
+
+```python
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+---
+
+# 🔹 4. Methods in Class
+
+## 📌 What are Methods?
+
+Functions defined inside a class.
+
+```python
+class Dog:
+    def bark(self):
+        print("Woof!")
+
+obj = Dog()
+obj.bark()
+```
+
+---
+
+# 🔹 5. self Keyword
+
+## 📌 What is self?
+
+Represents the current instance of the class.
+
+```python
+class Test:
+    def show(self):
+        print("This is self example")
+```
+
+---
+
+# 🔹 6. Class vs Object
+
+| Class             | Object             |
+| ----------------- | ------------------ |
+| Blueprint         | Instance           |
+| Defines structure | Uses the structure |
+
+---
+
+# 🔹 7. Encapsulation
+
+## 📌 What is Encapsulation?
+
+Wrapping data and methods together.
+
+```python
+class Bank:
+    def __init__(self, balance):
+        self.balance = balance
+```
+
+---
+
+# 🔹 8. Inheritance
+
+## 📌 What is Inheritance?
+
+One class can inherit properties of another class.
+
+```python
+class Animal:
+    def speak(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    pass
+
+obj = Dog()
+obj.speak()
+```
+
+---
+
+# 🔹 9. Polymorphism
+
+## 📌 What is Polymorphism?
+
+Same method name behaving differently.
+
+```python
+class Bird:
+    def sound(self):
+        print("Bird sound")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+```
+
+---
+
+# 🔹 10. Practical Example
+
+## 📌 Example: Student Class
+
+```python
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def display(self):
+        print(self.name, self.marks)
+
+s1 = Student("Alice", 90)
+s1.display()
+```
+
+---
+
+# 📊 Summary
+
+| Concept       | Description                     |
+| ------------- | ------------------------------- |
+| Class         | Blueprint for objects           |
+| Object        | Instance of class               |
+| **init**      | Constructor method              |
+| self          | Refers to current object        |
+| Method        | Function inside class           |
+| Encapsulation | Data + methods together         |
+| Inheritance   | Reuse properties                |
+| Polymorphism  | Same method, different behavior |
+
+---
 
 ## 📂 Files Included
 
@@ -1044,6 +1229,7 @@ print(max_num(5, 10))
 - `condition_branching.ipynb` → Demonstrates Python condition and branching concepts including if-else statements, nested conditions, logical operators, and real-world examples
 - - `loops.ipynb` → Demonstrates loop concepts in Python including for, while, nested loops, and loop control statements with practical examples
 - - `functions.ipynb` → Demonstrates Python function concepts including parameters, return statements, lambda functions, recursion, and variable scope with practical examples
+ - - `class_object.ipynb` → Demonstrates Object-Oriented Programming in Python including classes, objects, methods, inheritance, and polymorphism with practical examples
 ---
 
 ## 🎯 Purpose
