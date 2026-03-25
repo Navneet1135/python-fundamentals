@@ -1212,6 +1212,157 @@ s1.display()
 | Polymorphism  | Same method, different behavior |
 
 ---
+# 📚 Exception Handling in Python
+
+This notebook covers the concept of **exception handling in Python**, which helps manage errors and ensures smooth program execution.
+
+---
+
+# 🔹 1. Introduction to Exceptions
+
+## 📌 What is an Exception?
+
+An **exception** is an error that occurs during program execution and interrupts the normal flow of the program.
+
+### Example:
+
+```python
+x = 10
+y = 0
+print(x / y)  # ZeroDivisionError
+```
+
+---
+
+# 🔹 2. try and except
+
+## 📌 What is try-except?
+
+Used to handle exceptions and prevent program crashes.
+
+```python
+try:
+    x = 10 / 0
+except:
+    print("Error occurred")
+```
+
+---
+
+# 🔹 3. Handling Specific Exceptions
+
+## 📌 Why Specific Exceptions?
+
+To handle different errors differently.
+
+```python
+try:
+    x = int("abc")
+except ValueError:
+    print("Invalid conversion")
+```
+
+---
+
+# 🔹 4. else Block
+
+## 📌 What is else?
+
+Executes if no exception occurs.
+
+```python
+try:
+    x = 10 / 2
+except:
+    print("Error")
+else:
+    print("No error")
+```
+
+---
+
+# 🔹 5. finally Block
+
+## 📌 What is finally?
+
+Always executes, whether an exception occurs or not.
+
+```python
+try:
+    x = 10 / 0
+except:
+    print("Error")
+finally:
+    print("Execution complete")
+```
+
+---
+
+# 🔹 6. Raising Exceptions
+
+## 📌 What is raise?
+
+Used to manually trigger an exception.
+
+```python
+x = -1
+if x < 0:
+    raise ValueError("Negative value not allowed")
+```
+
+---
+
+# 🔹 7. Custom Exceptions
+
+## 📌 What are Custom Exceptions?
+
+User-defined exceptions for specific use cases.
+
+```python
+class MyError(Exception):
+    pass
+
+raise MyError("Custom error occurred")
+```
+
+---
+
+# 🔹 8. Practical Examples
+
+## 📌 Example 1: Safe Division
+
+```python
+def divide(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return "Cannot divide by zero"
+```
+
+## 📌 Example 2: Input Validation
+
+```python
+try:
+    num = int(input("Enter number: "))
+except ValueError:
+    print("Invalid input")
+```
+
+---
+
+# 📊 Summary
+
+| Concept            | Description          |
+| ------------------ | -------------------- |
+| Exception          | Runtime error        |
+| try-except         | Handle errors        |
+| Specific Exception | Targeted handling    |
+| else               | Runs if no error     |
+| finally            | Always executes      |
+| raise              | Manually throw error |
+| Custom Exception   | User-defined error   |
+
+---
 
 ## 📂 Files Included
 
@@ -1230,6 +1381,7 @@ s1.display()
 - - `loops.ipynb` → Demonstrates loop concepts in Python including for, while, nested loops, and loop control statements with practical examples
 - - `functions.ipynb` → Demonstrates Python function concepts including parameters, return statements, lambda functions, recursion, and variable scope with practical examples
  - - `class_object.ipynb` → Demonstrates Object-Oriented Programming in Python including classes, objects, methods, inheritance, and polymorphism with practical examples
+- - `exception_handling.ipynb` → Covers Python exception handling including try-except, else, finally, raise, and custom exceptions with examples
 ---
 
 ## 🎯 Purpose
